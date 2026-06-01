@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "intake-api"
+version = "0.1.0"
+description = "Contact intake API for ana-stanojevic.com"
+authors = ["Ana Stanojević <contact@ana-stanojevic.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = { version = "^0.32.0", extras = ["standard"] }
+openai = "^1.0.0"
+email-validator = "^2.0.0"
+httpx = "^0.28.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
