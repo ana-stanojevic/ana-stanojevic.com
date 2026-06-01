@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  site:
+    name: Site build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - run: npm ci
+      - run: npm run build
+
+  intake-api:
+    name: Intake API
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: intake-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          
+      - name: Install dependencies (same as Render)
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install --no-interaction --no-ansi
+
+      - name: Import check
+        run: python -c "from main import app; assert app.title"
+
+      - name: Health endpoint smoke test
+        run: |
+          python - <<'PY'
+          from fastapi.testclient import TestClient
+          from main import app
+
+          response = TestClient(app).get("/health")
+          assert response.status_code == 200
+          assert response.json() == {"ok": True}
+          PY

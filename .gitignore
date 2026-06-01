@@ -1,0 +1,21 @@
+# secrets
+site/.env.local
+intake-api/.env.local
+
+# build
+dist/
+
+# mac
+.DS_Store
+
+.vercel
+node_modules
+dist
+.env.local
+.vite
+*.tsbuildinfo
+
+__pycache__
+.venv
+
+
