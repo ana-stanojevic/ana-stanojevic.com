@@ -1,0 +1,94 @@
+<svg width="2400" height="1800" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graph network" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d2b38"/>
+      <stop offset="0.55" stop-color="#1f1e28"/>
+      <stop offset="1" stop-color="#15141c"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDE047"/>
+      <stop offset="0.5" stop-color="#EAB308"/>
+      <stop offset="1" stop-color="#CA8A04"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="150" y1="520" x2="900" y2="860" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d3a4f" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#1a1920" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="240" y1="560" x2="980" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a2835" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#121118" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="metalEdge" x1="-200" y1="80" x2="1400" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FACC15"/>
+      <stop offset="0.4" stop-color="#EAB308"/>
+      <stop offset="1" stop-color="#A16207"/>
+    </linearGradient>
+    <radialGradient id="metalNode" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) rotate(90) scale(11 11)">
+      <stop offset="0" stop-color="#FEF9C3"/>
+      <stop offset="0.35" stop-color="#FACC15"/>
+      <stop offset="0.75" stop-color="#EAB308"/>
+      <stop offset="1" stop-color="#713F12"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" rx="0" fill="url(#sky)"/>
+
+  <g fill="none" stroke="url(#metalEdge)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="-140 110L80 150" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.15s" repeatCount="indefinite"/></path>
+    <path d="80 150L330 205" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.45s" repeatCount="indefinite"/></path>
+    <path d="330 205L610 145" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.75s" repeatCount="indefinite"/></path>
+    <path d="610 145L870 210" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.05s" repeatCount="indefinite"/></path>
+    <path d="870 210L1240 170" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.35s" repeatCount="indefinite"/></path>
+    <path d="-80 300L170 255" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.95s" repeatCount="indefinite"/></path>
+    <path d="170 255L420 325" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.25s" repeatCount="indefinite"/></path>
+    <path d="420 325L730 240" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.55s" repeatCount="indefinite"/></path>
+    <path d="730 240L980 320" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.85s" repeatCount="indefinite"/></path>
+    <path d="980 320L1290 250" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="3.15s" repeatCount="indefinite"/></path>
+    <path d="-170 530L90 575" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.6s" repeatCount="indefinite"/></path>
+    <path d="90 575L360 640" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.9s" repeatCount="indefinite"/></path>
+    <path d="360 640L680 560" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></path>
+    <path d="680 560L960 650" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.5s" repeatCount="indefinite"/></path>
+    <path d="960 650L1310 545" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/></path>
+    <path d="80 150L170 255L90 575" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></path>
+    <path d="330 205L420 325L360 640" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.5s" repeatCount="indefinite"/></path>
+    <path d="610 145L730 240L680 560" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/></path>
+    <path d="870 210L980 320L960 650" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.1s" repeatCount="indefinite"/></path>
+  </g>
+
+  <g fill="url(#metalNode)" stroke="#FEF08A" stroke-width="1.2">
+    <circle cx="-140" cy="110" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.0s" repeatCount="indefinite"/></circle>
+    <circle cx="80" cy="150" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="205" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="145" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="870" cy="210" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1240" cy="170" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="-80" cy="300" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="170" cy="255" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="325" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="730" cy="240" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="320" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="3.0s" repeatCount="indefinite"/></circle>
+    <circle cx="1290" cy="250" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="-170" cy="530" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.45s" repeatCount="indefinite"/></circle>
+    <circle cx="90" cy="575" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="0.75s" repeatCount="indefinite"/></circle>
+    <circle cx="360" cy="640" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.05s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="560" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.35s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="650" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.65s" repeatCount="indefinite"/></circle>
+    <circle cx="1310" cy="545" r="8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.95s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g>
+    <circle cx="900" cy="160" r="72" fill="url(#sun)" opacity="0.22"/>
+    <circle cx="900" cy="160" r="140" fill="#EAB308" fill-opacity="0.06"/>
+    <circle cx="900" cy="160" r="220" fill="#FACC15" fill-opacity="0.03"/>
+  </g>
+
+  <g opacity="0.18">
+    <path d="M250 270c18-34 64-43 95-20 20-22 54-26 78-6 30-13 66 8 74 41 10 41-24 70-65 70H291c-50 0-74-42-41-85Z" fill="#9CA3AF"/>
+    <path d="M705 335c14-28 52-35 78-14 16-18 44-22 63-6 25-10 55 7 61 34 8 34-20 58-54 58H745c-40 0-59-34-33-72Z" fill="#9CA3AF"/>
+  </g>
+
+  <path d="M-40 790c170-170 390-220 580-165 125 35 235 102 330 205v300H-40V790Z" fill="url(#hill1)" opacity="0.96"/>
+  <path d="M220 930c130-220 330-335 560-312 190 19 340 148 460 355v220H220V930Z" fill="url(#hill2)" opacity="0.95"/>
+
+  <path d="M120 640C300 600 420 690 580 650C750 608 850 560 1040 590" stroke="#EAB308" stroke-opacity="0.12" stroke-width="8" stroke-linecap="round"/>
+</svg>
