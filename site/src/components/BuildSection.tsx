@@ -115,17 +115,21 @@ export default function BuildSection() {
       <div className="container">
         <div className="section-build__split">
           <div className="section-build__split-main">
-            <p className="section-build__eyebrow">Expected-value decision runtime</p>
+            <p className="section-build__eyebrow">Career platform</p>
             <h2 id="build-title" className="section-build__title">
-              Bounded Job Application Agent
+              Liman
             </h2>
             <div className="section-build__intro">
               <p className="section-build__subtitle">
-                Typical agents maximize activity. This system maximizes expected value under uncertainty, cost, and
-                execution risk.
+                A career platform for navigating opportunities, applications, growth, and long-term professional
+                direction.
               </p>
               <p className="section-build__subtitle">
-                Low-confidence opportunities are intentionally skipped. Quality over quantity is a design choice.
+                <strong>Current module:</strong> Bounded Application Workflow.
+              </p>
+              <p className="section-build__subtitle">
+                The workflow prioritizes high-value opportunities while keeping execution bounded, reviewable, and
+                human-controlled.
               </p>
             </div>
             <div className="section-build__block">
