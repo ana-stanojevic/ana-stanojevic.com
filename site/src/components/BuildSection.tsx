@@ -117,7 +117,7 @@ export default function BuildSection() {
           <div className="section-build__split-main">
             <p className="section-build__eyebrow">Career platform</p>
             <h2 id="build-title" className="section-build__title">
-              Liman
+              Limen
             </h2>
             <div className="section-build__intro">
               <p className="section-build__subtitle">
