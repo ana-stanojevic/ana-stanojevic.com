@@ -253,7 +253,7 @@ h1{
 .contact-ai-pills-hint,
 .contact-ai-pills-hint.muted,
 #contact .contact-ai-pills-hint{
-  margin:clamp(16px,4vw,28px) 0 clamp(12px,2.4vw,18px);
+  margin:clamp(6px,1.2vw,10px) 0 clamp(24px,3.8vw,34px);
   padding:0 8px;
   text-align:center;
   font-size:.78rem;
@@ -264,7 +264,7 @@ h1{
 }
 .contact-ai-pills-hint strong{
   font-weight:600;
-  color:rgba(236,234,231,.52);
+  color:rgba(236,234,231,.68);
 }
 .contact-ai-pills{
   display:flex;
@@ -526,7 +526,7 @@ h1{
   font-size:.82rem;
 }
 .contact-ai--compact .contact-ai-pills-hint{
-  margin:10px 0 10px;
+  margin:clamp(6px,1.2vw,10px) 0 clamp(24px,3.8vw,34px);
 }
 .contact-ai--compact .contact-ai-email-panel{
   padding-top:clamp(14px,3vw,22px);
