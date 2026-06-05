@@ -12,8 +12,9 @@ export default function Contact() {
           <div className="contact-ai-intro">
             <h3 className="contact-ai-title">Say hello</h3>
             <p className="contact-ai-pills-hint muted" id="contact-ai-pills-hint" role="note">
-              Questions, ideas, opportunities, or just a quick hello.{" "}
-              <strong>I read every message.</strong>
+              Questions, ideas, opportunities, or just a quick hello.
+              <br />
+              I read every message.
             </p>
             <div
               className="contact-ai-pills"
