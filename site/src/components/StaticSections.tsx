@@ -54,6 +54,10 @@ export function Footer() {
             GitHub
           </a>
           <span className="footer-simple__sep" aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/ana-stanojevic1/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <span className="footer-simple__sep" aria-hidden="true">·</span>
           <a
             href="https://scholar.google.com/citations?user=3DNfrZYAAAAJ&hl=en&oi=ao"
             target="_blank"
