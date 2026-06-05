@@ -1893,3 +1893,93 @@ textarea.contact-ai-input,
     margin-top:20px;
   }
 }
+
+/** Connect links — linktree-style page at /connect-links */
+.connect-links-page{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(32px,8vw,56px) var(--site-gutter);
+  background:var(--bg);
+}
+.connect-links{
+  width:min(22rem,100%);
+  margin:0 auto;
+  text-align:center;
+}
+.connect-links__header{
+  margin:0 0 clamp(28px,5vw,36px);
+}
+.connect-links__avatar{
+  display:block;
+  width:88px;
+  height:88px;
+  margin:0 auto clamp(16px,3vw,20px);
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,.12);
+  box-shadow:0 8px 28px rgba(0,0,0,.35);
+}
+.connect-links__title{
+  margin:0;
+  font-family:"Space Grotesk",system-ui,sans-serif;
+  font-size:clamp(1.5rem,4vw,1.85rem);
+  font-weight:700;
+  letter-spacing:-.03em;
+  line-height:1.12;
+  color:var(--txt);
+}
+.connect-links__tagline{
+  margin:clamp(10px,2vw,14px) 0 0;
+  font-size:clamp(.78rem,1.8vw,.88rem);
+  font-weight:500;
+  letter-spacing:.04em;
+  line-height:1.4;
+  color:rgba(236,234,231,.52);
+}
+.connect-links__intro{
+  margin:0 0 clamp(16px,3vw,22px);
+  font-size:.92rem;
+  font-weight:600;
+  letter-spacing:-.01em;
+  line-height:1.4;
+  color:rgba(236,234,242,.78);
+}
+.connect-links__nav{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.connect-links__link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:var(--touch-target);
+  padding:14px 20px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  font:600 .98rem "DM Sans",system-ui,sans-serif;
+  color:var(--txt);
+  text-decoration:none;
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease;
+}
+.connect-links__link:hover{
+  transform:translateY(-1px);
+  border-color:rgba(196,71,46,.35);
+  background:rgba(255,255,255,.09);
+  box-shadow:0 8px 24px rgba(0,0,0,.28);
+  color:var(--txt);
+}
+.connect-links__link:focus-visible{
+  outline:2px solid rgba(196,71,46,.55);
+  outline-offset:2px;
+}
+@media (hover:none){
+  .connect-links__link:hover{
+    transform:none;
+    box-shadow:none;
+  }
+}
