@@ -18,7 +18,7 @@ describe("Contact", () => {
   it("renders tabs, controls, and accessible form labels", () => {
     render(<Contact />);
 
-    expect(screen.getByRole("region", { name: /contact/i })).toBeInTheDocument();
+    expect(screen.getByRole("region", { name: /say hello/i })).toBeInTheDocument();
     expect(screen.getByRole("group", { name: /contact topic/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /work together/i })).toBeEnabled();
     expect(screen.getByRole("button", { name: /hiring/i })).toBeEnabled();

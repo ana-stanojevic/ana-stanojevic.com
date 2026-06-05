@@ -10,6 +10,6 @@ describe("App", () => {
     expect(screen.getByRole("main")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /ana stanojević/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /about/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /contact/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /say hello/i })).toBeInTheDocument();
   });
 });

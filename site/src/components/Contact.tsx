@@ -6,13 +6,13 @@ import { useContactIntake } from "../lib/contactIntake";
 export default function Contact() {
   const c = useContactIntake();
   return (
-    <section id="contact" className="section-contact" aria-label="Contact">
+    <section id="contact" className="section-contact" aria-label="Say hello">
       <div className="container">
         <div className="contact-ai contact-ai--compact">
           <div className="contact-ai-intro">
-            <h3 className="contact-ai-title">Contact</h3>
+            <h3 className="contact-ai-title">Say hello</h3>
             <p className="contact-ai-pills-hint muted" id="contact-ai-pills-hint" role="note">
-              Simple contact—pick a topic and write a short note.
+              Questions, ideas, opportunities, or just a quick hello. I read every message.
             </p>
             <div
               className="contact-ai-pills"
@@ -197,7 +197,7 @@ export default function Contact() {
           {!c.sent && (
             <p className="contact-ai-bottom-email contact-ai-bottom-email--compact" id="contact-ai-bottom-email" role="note">
               <span className="contact-ai-direct-email contact-ai-direct-email--inline">
-                <a href="mailto:contact@ana-stanojevic.com?subject=Reaching%20out%20via%20your%20site">Email directly</a>
+                <a href="mailto:contact@ana-stanojevic.com?subject=Reaching%20out%20via%20your%20site">Send an email</a>
               </span>
             </p>
           )}
