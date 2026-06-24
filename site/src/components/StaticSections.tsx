@@ -28,8 +28,8 @@ export function About() {
           About
         </h2>
         <div className="section-about__text section-about__text--home">
-          <p>PhD at EPFL with research experience across Huawei, IBM, and Google.</p>
-          <p>Now focused on building real-world AI systems.</p>
+          <p>PhD at EPFL with experience across Huawei, IBM, and Google.</p>
+          <p>Focused on turning AI capabilities into reliable systems.</p>
         </div>
       </div>
     </section>
